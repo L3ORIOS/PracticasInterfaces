@@ -1,0 +1,45 @@
+﻿<Window x:Class="Ejercicio2._0.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ejercicio2._0"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DockPanel Background="#FFBED6E5" LastChildFill="True">
+            <DockPanel Margin="3" DockPanel.Dock="Top"  Height="100" Background="#FFCCDCAB" >
+
+                <TextBlock Foreground="White" Margin="10,10,0,0" >Border Top 1</TextBlock>
+                <DockPanel.Effect>
+                    <DropShadowEffect Color="LightGray"></DropShadowEffect>
+                </DockPanel.Effect>
+            </DockPanel>
+            <DockPanel Margin="3" DockPanel.Dock="Right" Width="100"  Background="#FFC1B2D3">
+                <TextBlock Foreground="White" Margin="0,10,0,0" HorizontalAlignment="Center" >Border Right 2</TextBlock>
+                <DockPanel.Effect>
+                    <DropShadowEffect Color="LightGray"></DropShadowEffect>
+                </DockPanel.Effect>
+            </DockPanel>
+            <DockPanel Margin="3" DockPanel.Dock="Bottom" Height="100"    Background="#FFFBCAA1">
+                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">Border left 3</TextBlock>
+                <DockPanel.Effect>
+                    <DropShadowEffect Color="LightGray"></DropShadowEffect>
+                </DockPanel.Effect>
+            </DockPanel>
+            <DockPanel Margin="3" Width="100" DockPanel.Dock="Left"  Background="#FFFFFC79">
+                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">Border left 4</TextBlock>
+                <DockPanel.Effect>
+                    <DropShadowEffect Color="LightGray"></DropShadowEffect>
+                </DockPanel.Effect>
+            </DockPanel>
+            <DockPanel Margin="3"  Width="auto"   Background="#FFFF7E79">
+                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">Border center 5</TextBlock>
+                <DockPanel.Effect>
+                    <DropShadowEffect Color="LightGray"></DropShadowEffect>
+                </DockPanel.Effect>
+            </DockPanel>
+
+        </DockPanel>
+    </Grid>
+</Window>
