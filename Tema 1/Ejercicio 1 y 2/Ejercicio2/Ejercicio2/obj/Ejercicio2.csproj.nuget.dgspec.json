@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Danie\\Documents\\GitHub\\DAM-2024-2025\\PracticasInterfaces\\Ejercicio2\\Ejercicio2\\Ejercicio2.csproj": {}
+    "C:\\Users\\Danie\\Documents\\GitHub\\DAM-2024-2025\\PracticasInterfaces\\Tema 1\\Ejercicio 1 y 2\\Ejercicio2\\Ejercicio2\\Ejercicio2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Danie\\Documents\\GitHub\\DAM-2024-2025\\PracticasInterfaces\\Ejercicio2\\Ejercicio2\\Ejercicio2.csproj": {
+    "C:\\Users\\Danie\\Documents\\GitHub\\DAM-2024-2025\\PracticasInterfaces\\Tema 1\\Ejercicio 1 y 2\\Ejercicio2\\Ejercicio2\\Ejercicio2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Danie\\Documents\\GitHub\\DAM-2024-2025\\PracticasInterfaces\\Ejercicio2\\Ejercicio2\\Ejercicio2.csproj",
+        "projectUniqueName": "C:\\Users\\Danie\\Documents\\GitHub\\DAM-2024-2025\\PracticasInterfaces\\Tema 1\\Ejercicio 1 y 2\\Ejercicio2\\Ejercicio2\\Ejercicio2.csproj",
         "projectName": "Ejercicio2",
-        "projectPath": "C:\\Users\\Danie\\Documents\\GitHub\\DAM-2024-2025\\PracticasInterfaces\\Ejercicio2\\Ejercicio2\\Ejercicio2.csproj",
+        "projectPath": "C:\\Users\\Danie\\Documents\\GitHub\\DAM-2024-2025\\PracticasInterfaces\\Tema 1\\Ejercicio 1 y 2\\Ejercicio2\\Ejercicio2\\Ejercicio2.csproj",
         "packagesPath": "C:\\Users\\Danie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Danie\\Documents\\GitHub\\DAM-2024-2025\\PracticasInterfaces\\Ejercicio2\\Ejercicio2\\obj\\",
+        "outputPath": "C:\\Users\\Danie\\Documents\\GitHub\\DAM-2024-2025\\PracticasInterfaces\\Tema 1\\Ejercicio 1 y 2\\Ejercicio2\\Ejercicio2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

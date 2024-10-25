@@ -9,40 +9,43 @@
     <Grid>
         <DockPanel Background="#FFBED6E5" LastChildFill="True">
             
-            <Border Margin="3" DockPanel.Dock="Top"  Height="100" BorderBrush="#FF1570E6" BorderThickness="1" Background="#FFCCDCAB">
+            <DockPanel Margin="3" DockPanel.Dock="Top"  Height="100"  Background="#FFCCDCAB">
                 <TextBlock Foreground="White" Margin="10,10,0,0" >Border Top 1</TextBlock>
-                <Border.Effect>
+                <DockPanel.Effect>
                     <DropShadowEffect Color="LightGray"></DropShadowEffect>
-                </Border.Effect>
-            </Border>
-            
-            <Border Margin="3" DockPanel.Dock="Right" Width="100" BorderBrush="#FF1570E6" BorderThickness="1" Background="#FFC1B2D3">
+                </DockPanel.Effect>
+            </DockPanel>
+            <DockPanel Margin="3" DockPanel.Dock="Right" Width="100"  Background="#FFC1B2D3">
                 <TextBlock Foreground="White" Margin="0,10,0,0" HorizontalAlignment="Center" >Border Right 2</TextBlock>
-                <Border.Effect>
+                <DockPanel.Effect>
                     <DropShadowEffect Color="LightGray"></DropShadowEffect>
-                </Border.Effect>
-            </Border>
-            
-            <Border Margin="3" DockPanel.Dock="Bottom" Height="100"  BorderBrush="#FF1570E6" BorderThickness="1"  Background="#FFFBCAA1">
+                </DockPanel.Effect>
+            </DockPanel>
+            <DockPanel Margin="3" DockPanel.Dock="Bottom" Height="100"    Background="#FFFBCAA1">
                 <TextBlock Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center">Border left 3</TextBlock>
-                <Border.Effect>
+                <DockPanel.Effect>
                     <DropShadowEffect Color="LightGray"></DropShadowEffect>
-                </Border.Effect>
-            </Border>
-            
-            <Border Margin="3" Width="100" DockPanel.Dock="Left" BorderBrush="#FF1570E6" BorderThickness="1"  Background="#FFFFFC79">
+                </DockPanel.Effect>
+            </DockPanel>
+            <DockPanel Margin="3" Width="100" DockPanel.Dock="Left"  Background="#FFFFFC79">
                 <TextBlock Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center">Border left 4</TextBlock>
-                <Border.Effect>
+                <DockPanel.Effect>
                     <DropShadowEffect Color="LightGray"></DropShadowEffect>
-                </Border.Effect>
-            </Border>
-            
+                </DockPanel.Effect>
+            </DockPanel>
+
             <Border Margin="3"  Width="auto"  BorderBrush="#FF1570E6" BorderThickness="1"  Background="#FFFF7E79">
                 <TextBlock Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center">Border center 5</TextBlock>
                 <Border.Effect>
                     <DropShadowEffect Color="LightGray"></DropShadowEffect>
                 </Border.Effect>
             </Border>
+
+
+
+
+
+
 
         </DockPanel>
     </Grid>

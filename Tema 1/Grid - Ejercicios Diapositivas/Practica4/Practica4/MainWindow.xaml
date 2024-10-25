@@ -1,0 +1,123 @@
+﻿<Window x:Class="Practica4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practica4"
+        mc:Ignorable="d"
+        Title="Practica 4 - Leo Ríos - 2º DAM" Height="450" Width="800" Background="LightGray">
+    <Grid Margin="30" Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="5"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="5"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="5"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <!-- TITULOS -->
+        <TextBlock  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" Background="#3341DC99">Ejemplo de Clipping</TextBlock>
+        <TextBlock Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" Background="Aquamarine">Ejemplo de Scrolling</TextBlock>
+        <TextBlock Grid.Column="2" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" Background="Aquamarine">Ejemplo de Scalling</TextBlock>
+
+        <!-- SPLITTERS -->
+        <GridSplitter Grid.Column="2" Grid.Row="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="Red"></GridSplitter>
+        <GridSplitter Grid.Column="1" Grid.Row="4" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="Red"></GridSplitter>
+        <GridSplitter Grid.Column="3" Grid.Row="4" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="Red"></GridSplitter>
+        
+        <!-- CLIPPING -->
+        <!-- ClipToBounds : Propiedad que nos permite evitar el desvordamiento dentro de un conenedor.-->
+        <Canvas Grid.Row="1" ClipToBounds="True">
+            <Canvas.Background>
+                <!-- LinearGradientBrush : Clave para controlar cómo y dónde aparece el gradiente -->
+                <!-- StartPoint="0,0": El inicio del gradiente está en la parte superior del Canvas (coordenada (0,0) -->
+                <!-- EndPoint="0,1": El final del gradiente está en la parte inferior del Canvas (coordenada (0,1)) -->
+                <LinearGradientBrush  StartPoint="0,0" EndPoint="0,1">
+                    <!-- El color Aqua se coloca en el final del gradiente, es decir, en la parte inferior -->
+                    <GradientStop Color="White" Offset="0"></GradientStop>
+                    <!-- El color White se coloca en el inicio del gradiente, es decir, en la parte superior -->
+                    <GradientStop Color="Aquamarine" Offset="1"></GradientStop>
+                </LinearGradientBrush>
+            </Canvas.Background>
+            
+            <Button Canvas.Top="10" Canvas.Left="20">Este es un clro ejemplo para comprender el comportamiento de clipping</Button>
+            <Button Canvas.Top="40" Canvas.Left="20">O no ?</Button>
+        </Canvas>
+
+        <!-- SCROLLING -->
+        <!-- 
+            En la tercera celda se coloco una serie de botones y después se metieron en un ScrollView
+            
+            1. ¿QUE OCURRIO?
+        
+            En un principio los botones se superponen uno encima de otro.
+            Al meterlos en un ScrollView se apilan de manera vertical.
+        
+        -->
+        <ScrollViewer Grid.Row="1" Grid.Column="4" >
+
+            <ScrollViewer.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="Aquamarine" Offset="0"></GradientStop>
+                    <GradientStop Color="White" Offset="1"></GradientStop>
+                </LinearGradientBrush>
+            </ScrollViewer.Background>
+            
+            <ItemsControl HorizontalAlignment="Left">
+                <Button Height="20" Width="60">1</Button>
+                <Button Height="20" Width="60">2</Button>
+                <Button Height="20" Width="60">3</Button>
+                <Button Height="20" Width="60">4</Button>
+                <Button Height="20" Width="60">5</Button>
+                <Button Height="20" Width="60">6</Button>
+                <Button Height="20" Width="60">7</Button>
+                <Button Height="20" Width="60">8</Button>
+                <Button Height="20" Width="60">9</Button>
+            </ItemsControl>
+        </ScrollViewer>
+
+        <!-- SCALING -->
+        <Viewbox Grid.Row="4" Stretch="Fill">
+            <StackPanel Margin="5"  Background="Aquamarine">
+                <Label HorizontalAlignment="Center">FILL</Label>
+                <TextBox>Escribe aqui tu mensaje</TextBox>
+                <Button>Enviar</Button>
+            </StackPanel>
+        </Viewbox>
+        
+        <Viewbox Grid.Row="4" Grid.Column="2" Stretch="Uniform" >
+            <StackPanel Margin="5"  Background="Aquamarine">
+                <Label HorizontalAlignment="Center">UNIFORM</Label>
+                <TextBox>Escribe aqui tu mensaje</TextBox>
+                <Button>Enviar</Button>
+            </StackPanel>
+        </Viewbox>
+
+        <Viewbox Grid.Row="4" Grid.Column="4" Stretch="UniformToFill">
+            <StackPanel Margin="5"  Background="Aquamarine">
+                <Label HorizontalAlignment="Center">UNIFORM TO FILL</Label>
+                <TextBox>Escribe aqui tu mensaje</TextBox>
+                <Button>Enviar</Button>
+            </StackPanel>
+        </Viewbox>
+        
+        <Viewbox Grid.Row="6" Grid.Column="2"  Stretch="None">
+            <StackPanel Margin="5"  Background="Aquamarine">
+                <Label HorizontalAlignment="Center">NONE</Label>
+                <TextBox>Escribe aqui tu mensaje</TextBox>
+                <Button>Enviar</Button>
+            </StackPanel>
+        </Viewbox>
+
+
+
+    </Grid>
+</Window>
