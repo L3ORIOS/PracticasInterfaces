@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="check.png" />
+    <None Remove="close.png" />
+    <None Remove="help.png" />
+    <None Remove="tools.gif" />
+    <None Remove="whatsapp.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="check.png" />
+    <Resource Include="close.png" />
+    <Resource Include="help.png" />
+    <Resource Include="tools.gif" />
+    <Resource Include="whatsapp.png" />
+  </ItemGroup>
+
+</Project>

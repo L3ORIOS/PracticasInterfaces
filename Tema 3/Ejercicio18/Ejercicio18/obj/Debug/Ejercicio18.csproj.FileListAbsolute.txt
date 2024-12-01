@@ -1,0 +1,8 @@
+C:\Users\Danie\Documents\GitHub\DAM-2024-2025\PracticasInterfaces\Tema 3\Ejercicio18\Ejercicio18\obj\Debug\Ejercicio18.csproj.AssemblyReference.cache
+C:\Users\Danie\Documents\GitHub\DAM-2024-2025\PracticasInterfaces\Tema 3\Ejercicio18\Ejercicio18\obj\Debug\Ejercicio18.csproj.SuggestedBindingRedirects.cache
+C:\Users\Danie\Documents\GitHub\DAM-2024-2025\PracticasInterfaces\Tema 3\Ejercicio18\Ejercicio18\obj\Debug\Ejercicio18.csproj.CoreCompileInputs.cache
+C:\Users\Danie\Documents\GitHub\DAM-2024-2025\PracticasInterfaces\Tema 3\Ejercicio18\Ejercicio18\bin\Debug\Ejercicio18.exe.config
+C:\Users\Danie\Documents\GitHub\DAM-2024-2025\PracticasInterfaces\Tema 3\Ejercicio18\Ejercicio18\bin\Debug\Ejercicio18.exe
+C:\Users\Danie\Documents\GitHub\DAM-2024-2025\PracticasInterfaces\Tema 3\Ejercicio18\Ejercicio18\bin\Debug\Ejercicio18.pdb
+C:\Users\Danie\Documents\GitHub\DAM-2024-2025\PracticasInterfaces\Tema 3\Ejercicio18\Ejercicio18\obj\Debug\Ejercicio18.exe
+C:\Users\Danie\Documents\GitHub\DAM-2024-2025\PracticasInterfaces\Tema 3\Ejercicio18\Ejercicio18\obj\Debug\Ejercicio18.pdb

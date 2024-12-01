@@ -1,0 +1,75 @@
+﻿<Window x:Class="PracticaFinal.CorreoEnviado"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PracticaFinal"
+        mc:Ignorable="d"
+        Title="CorreoEnviado" Height="600" Width="1000"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen" Icon="/Group-4.ico" >
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="DictionaryOfStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Border CornerRadius="20" Background="#CC000000" BorderThickness="5">
+            <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0 ,1">
+                    <GradientStop Color="#FF4B3A" Offset="1"></GradientStop>
+                    <GradientStop Color="#FFFFFF" Offset="0.75"></GradientStop>
+                    <GradientStop Color="#00F4EF" Offset="0.0"></GradientStop>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+
+            <Grid>
+                <Button x:Name="BtnCorreoEnviado" Background="Transparent"  Click="BtnCorreoEnviado_Click" >
+                    <Button.Content>
+                        <Border CornerRadius="30" BorderThickness="1" Background="White" Width="503" Height="111" >
+                            <StackPanel>
+                                <TextBlock Text="Email Enviado"
+                           Foreground="#FF4B3A"
+                           FontSize="36"
+                           FontFamily="Montserrat"
+                           HorizontalAlignment="Center"
+                           FontWeight="Heavy"
+                           Margin="0,10,0,0"/>
+                                <TextBlock Text="Por favor revise su email"
+                           Foreground="#FF4B3A"
+                           FontSize="16"
+                           FontFamily="Montserrat"
+                           HorizontalAlignment="Center"
+                           FontWeight="Normal"
+                           Margin="0,10,0,0"/>
+                            </StackPanel>
+                        </Border>
+                    </Button.Content>
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter/>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Background" Value="Transparent"/>
+                                                <Setter Property="Cursor" Value="Hand"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+            </Grid>        
+           
+        </Border>
+    </Grid>
+</Window>

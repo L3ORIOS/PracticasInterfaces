@@ -1,0 +1,82 @@
+﻿<Window x:Class="Practica10.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practica10"
+        mc:Ignorable="d"
+        Title="Practica 10 - Leo Rios - 2º DAM" Height="180" Width="400">
+
+    <Grid>
+        <GroupBox Margin="5"    BorderThickness="3" BorderBrush="Gray"  Background="#FFF5F062" >
+            <GroupBox.Header>
+                <TextBlock FontWeight="Heavy">MENÚ CUTRE</TextBlock>
+            </GroupBox.Header>
+
+            <StackPanel  Margin="10,0,0,0">
+                <Label FontWeight="ExtraBold" Padding="5,0,0,3">Comida</Label>
+                <RadioButton GroupName="Comida" >
+                    <RadioButton.Content>
+                        Pizza
+                    </RadioButton.Content>
+                    <RadioButton.ToolTip>
+                        <StackPanel >
+                            <TextBlock FontWeight="Bold">Se recomienda la hawaiana sin piña</TextBlock>
+                            <Border BorderBrush="Silver" BorderThickness="0,1,0,0" Margin="0,8" />
+                            <Image Source="/risa.jpg"/>
+                            <Border BorderBrush="Silver" BorderThickness="0,1,0,0" Margin="0,8" />
+                        </StackPanel>
+                    </RadioButton.ToolTip>
+                </RadioButton>
+                <RadioButton GroupName="Comida">
+                    <RadioButton.Content>
+                        Sopa de verduras
+                    </RadioButton.Content>
+                    <RadioButton.ToolTip>
+                        <StackPanel >
+                            <TextBlock FontWeight="Bold">Por si eres un tío sano</TextBlock>
+                            <Border BorderBrush="Silver" BorderThickness="0,1,0,0" Margin="0,8" />
+                            <Image Source="/risa.jpg"/>
+                            <Border BorderBrush="Silver" BorderThickness="0,1,0,0" Margin="0,8" />
+                        </StackPanel>
+                    </RadioButton.ToolTip>
+                </RadioButton>
+                <Label FontWeight="ExtraBold" Padding="5,3,0,3">Comida</Label>
+                <RadioButton GroupName="Bebida"  >
+                    <RadioButton.Content>
+                        Agua
+                    </RadioButton.Content>
+                    <RadioButton.ToolTip>
+                        <StackPanel >
+                            <TextBlock FontWeight="Bold">Cuidado que crias Ranas</TextBlock>
+                            <Border BorderBrush="Silver" BorderThickness="0,1,0,0" Margin="0,8" />
+                            <Image Source="/risa.jpg"/>
+                            <Border BorderBrush="Silver" BorderThickness="0,1,0,0" Margin="0,8" />
+                        </StackPanel>
+                    </RadioButton.ToolTip>
+                </RadioButton>
+                <RadioButton GroupName="Bebida" >
+                    <RadioButton.Content>
+                        Coca-Cola
+                    </RadioButton.Content>
+                    <RadioButton.ToolTip>
+                        <StackPanel >
+                            <TextBlock FontWeight="Bold">Si la pides Zero te sentiras mejor</TextBlock>
+                            <Border BorderBrush="Silver" BorderThickness="0,1,0,0" Margin="0,8" />
+                            <Image Source="/risa.jpg"/>
+                            <Border BorderBrush="Silver" BorderThickness="0,1,0,0" Margin="0,8" />
+                        </StackPanel>
+                    </RadioButton.ToolTip>
+                </RadioButton>
+            </StackPanel>
+
+ 
+               
+       
+
+
+
+
+        </GroupBox>
+    </Grid>
+</Window>

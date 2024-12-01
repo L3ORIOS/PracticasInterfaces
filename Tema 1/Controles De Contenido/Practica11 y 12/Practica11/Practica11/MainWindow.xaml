@@ -1,0 +1,71 @@
+﻿<Window x:Class="Practica11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practica11"
+        mc:Ignorable="d"
+        Title="Práctica 11 -Leo Rios - 2ºDAM" Height="300" Width="300">
+    <Grid>
+        <TabControl Height="250" Width="250">
+            <TabItem Header="Viaje" >
+                <StackPanel Background="#FF8748E9" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                    <ComboBox Height="32" Width="200" Margin="0,20">
+                        <ComboBoxItem>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/plane.gif"/>
+                                <TextBlock>Avión</TextBlock>
+                            </StackPanel>
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/train.png"/>
+                                <TextBlock>Tren</TextBlock>
+                            </StackPanel>
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/bus.png"/>
+                                <TextBlock>Autobús</TextBlock>
+                            </StackPanel>
+                        </ComboBoxItem>
+                    </ComboBox>
+                    <CheckBox  HorizontalAlignment="Center">Contratra seguro de viaje</CheckBox>
+                    <ListBox Height="90" Width="100" Margin="0,20">
+                        <ListBoxItem>Roma</ListBoxItem>
+                        <ListBoxItem>París</ListBoxItem>
+                        <ListBoxItem>El Cairo</ListBoxItem>
+                        <ListBoxItem>Vilna</ListBoxItem>
+                        <ListBoxItem>Amsterdam</ListBoxItem>
+                        <ListBoxItem>Londres</ListBoxItem>
+                        <ListBoxItem>Lisboa</ListBoxItem>
+                        <ListBoxItem>Belín</ListBoxItem>
+                        <ListBoxItem>Dublín</ListBoxItem>
+                        <ListBoxItem>Oslo</ListBoxItem>
+                    </ListBox>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Formato de pago" >
+                <StackPanel  Background="#FF685016" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                    <TreeView Margin="20" Background="#FFF39751">
+                        <TreeViewItem Header="Efectivo" IsExpanded="True">
+                            <TreeViewItem Header="Pago único"/>
+                            <TreeViewItem Header="Pago fraccionado"/>
+                        </TreeViewItem>
+                        <TreeViewItem Header="Tarjeta de crédito/débito" IsExpanded="True">
+                            <TreeViewItem Header="Visa"/>
+                            <TreeViewItem Header="MasterCard"/>
+                        </TreeViewItem>
+                        <TreeViewItem Header="Otros métodos" IsExpanded="True">
+                            <TreeViewItem Header="Paypla"/>
+                            <TreeViewItem Header="Tarjeta de prepago" IsExpanded="True">
+                                <TreeViewItem Header="Ukash"/>
+                                <TreeViewItem Header="Payafecard"/>
+                            </TreeViewItem>
+                        </TreeViewItem>
+                    </TreeView>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

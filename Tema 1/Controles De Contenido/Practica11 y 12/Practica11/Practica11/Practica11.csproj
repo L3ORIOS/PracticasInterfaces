@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="bus.png" />
+    <None Remove="plane.gif" />
+    <None Remove="train.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="bus.png" />
+    <Resource Include="plane.gif" />
+    <Resource Include="train.png" />
+  </ItemGroup>
+
+</Project>

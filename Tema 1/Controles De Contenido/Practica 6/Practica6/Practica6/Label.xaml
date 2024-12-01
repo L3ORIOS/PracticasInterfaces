@@ -1,0 +1,17 @@
+﻿<Window x:Class="Practica6.Label"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practica6"
+        mc:Ignorable="d"
+        Title="Label" Height="200" Width="200">
+    <Grid>
+        <StackPanel Margin="20">
+            <Label Content="_Nombre" Target="{Binding ElementName=txtNombre}"/>
+            <TextBox x:Name="txtNombre"></TextBox>
+            <Label Content="_Mensaje" Target="{Binding ElementName=btnMensaje}"  Name="lblMensaje"/>
+            <Button x:Name="btnMensaje" Content="Mensaje" Click="btnMensaje_Click"  />
+        </StackPanel>
+    </Grid>
+</Window>

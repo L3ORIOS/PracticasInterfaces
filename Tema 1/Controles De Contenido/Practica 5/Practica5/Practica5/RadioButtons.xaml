@@ -1,0 +1,36 @@
+﻿<Window x:Class="Practica5.RadioButtons"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practica5"
+        mc:Ignorable="d"
+         Title="RadioButtons" Height="250" Width="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Margin="10">
+            <Label FontWeight="Bold">Nivel de Inglés?</Label>
+            <RadioButton>Bajo</RadioButton>
+            <RadioButton>Medio</RadioButton>
+            <RadioButton IsChecked="True">I´m english, man!</RadioButton>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Margin="10">
+            <Label FontWeight="Bold">Nivel de Ingles?</Label>
+            <RadioButton GroupName="ingles2">Bajo</RadioButton>
+            <RadioButton GroupName="ingles2">Medio</RadioButton>
+            <RadioButton GroupName="ingles2" IsChecked="True">I´m english, man!</RadioButton>
+
+            <Label FontWeight="Bold">Nivel de Fracés?</Label>
+            <RadioButton GroupName="frances">Bajo</RadioButton>
+            <RadioButton GroupName="frances">Medio</RadioButton>
+            <RadioButton GroupName="frances" IsChecked="True">Oh la la! je suis Français mon ami!</RadioButton>
+        </StackPanel>
+
+    </Grid>
+</Window>

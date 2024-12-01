@@ -1,0 +1,57 @@
+﻿<Window x:Class="Practica13.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practica13"
+        mc:Ignorable="d"
+        Title="Práctica 13 - Leo Ríos - 2º DAM" Height="600" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <InkCanvas Grid.Row="0" Grid.Column="0" Width="200" Height="200">
+            <InkCanvas.Background>
+                <ImageBrush ImageSource="/1.jpg"/>
+            </InkCanvas.Background>
+        </InkCanvas>
+        <InkCanvas Grid.Row="0" Grid.Column="1" Width="200" Height="200">
+            <InkCanvas.DefaultDrawingAttributes>
+                <DrawingAttributes Width="8"></DrawingAttributes>
+            </InkCanvas.DefaultDrawingAttributes>
+            <InkCanvas.Background>
+                <ImageBrush>
+                    <ImageBrush.ImageSource>
+                        <FormatConvertedBitmap Source="/1.jpg" DestinationFormat="Gray8"/>
+                    </ImageBrush.ImageSource>
+                </ImageBrush>
+            </InkCanvas.Background>
+        </InkCanvas>
+        <InkCanvas Grid.Row="1" Grid.Column="0" Width="200" Height="200">
+            <InkCanvas.DefaultDrawingAttributes>
+                <DrawingAttributes Width="8" Color="AliceBlue"></DrawingAttributes>
+            </InkCanvas.DefaultDrawingAttributes>
+            <InkCanvas.Background>
+                <ImageBrush ImageSource="/2.jpg" />
+            </InkCanvas.Background>
+        </InkCanvas>
+        <InkCanvas Grid.Row="1" Grid.Column="1" Width="200" Height="200">
+            <InkCanvas.DefaultDrawingAttributes>
+                <DrawingAttributes Height="8" Color="Aqua"></DrawingAttributes>
+            </InkCanvas.DefaultDrawingAttributes>
+            <InkCanvas.Background>
+                <ImageBrush>
+                    <ImageBrush.ImageSource>
+                        <FormatConvertedBitmap Source="/2.jpg" DestinationFormat="Gray8"/>
+                    </ImageBrush.ImageSource>
+                </ImageBrush>
+            </InkCanvas.Background>
+        </InkCanvas>
+
+    </Grid>
+</Window>

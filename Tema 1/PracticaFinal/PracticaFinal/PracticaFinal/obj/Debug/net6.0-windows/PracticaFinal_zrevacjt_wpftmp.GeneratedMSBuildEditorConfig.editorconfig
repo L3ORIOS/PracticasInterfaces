@@ -1,0 +1,10 @@
+is_global = true
+build_property.TargetFramework = net6.0-windows
+build_property.TargetPlatformMinVersion = 7.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PracticaFinal_zrevacjt_wpftmp
+build_property.ProjectDir = C:\Users\Danie\Documents\GitHub\DAM-2024-2025\PracticasInterfaces\Tema 1\PracticaFinal\PracticaFinal\PracticaFinal\

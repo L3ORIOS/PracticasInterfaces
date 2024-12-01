@@ -1,0 +1,66 @@
+﻿<Window x:Class="PracticaFinal.Recuperar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PracticaFinal"
+        mc:Ignorable="d"
+        Title="Recuperar" Height="600" Width="1000"
+        Background="Transparent" 
+        WindowStyle="none"
+        WindowStartupLocation="CenterScreen" 
+        AllowsTransparency="True" 
+        MouseDown="Window_MouseDown" 
+        Icon="/Group-4.ico" 
+        >
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="DictionaryOfStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Border CornerRadius="20" Background="{StaticResource Rojo}" BorderThickness="5">
+            <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0 ,1">
+                    <GradientStop Color="#FF4B3A" Offset="1"></GradientStop>
+                    <GradientStop Color="#FFFFFF" Offset="0.75"></GradientStop>
+                    <GradientStop Color="#00F4EF" Offset="0.0"></GradientStop>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="1" VerticalAlignment="Bottom">
+                    <Label Content="Bienvenidos" FontSize="65" FontWeight="Bold" Foreground="White" FontFamily="Montserrat" Margin="50,0,0,50"/>
+                    <Image Source="/Group 4.png"/>
+                </StackPanel>
+                <StackPanel Grid.Column="1" Grid.Row="1"  Height="435" Margin="100,0" >
+                    <TextBlock Text="Recuperar contraseña"  Margin="0,50,0,0" FontSize="24" Style="{StaticResource TextBlockStyles}" />
+                    <TextBlock Text="Email address"  Margin="0,50,0,10" Style="{StaticResource TextBlockStyles}" />
+                    <TextBox x:Name="TextBoxRecuperar" Style="{StaticResource TextBoxStyles}" TextChanged="TextBoxRecuperar_TextChanged"/>
+                    <TextBlock Name="ErrorText" Text="* No es un correo válido." Margin="0,10" Style="{StaticResource ErrorText}" />
+                    <TextBlock Text="Al hacer click en enviar, recibirá un email con los pasos a seguir." TextWrapping="Wrap" Margin="0,50,0,50" Style="{StaticResource TextBlockStyles}"/>
+
+
+                    <Button x:Name="BtnRecuperar" Content="Enviar" IsEnabled="False"  Style="{StaticResource ButtonClik}" Click="BtnRecuperar_Click"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Arrow 1.png" Width="20" Height="20" Margin="20,0" MouseDown="Image_MouseDown" Cursor="Hand"/>
+                    <TextBlock Text="Volver" Style="{StaticResource TextBlockStyles}" Margin="0,5,0,0"/>
+                </StackPanel>
+                <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button x:Name="btn_Minimizar" Content="-" Style="{StaticResource ControlesDeVentana}" Click="btn_Minimizar_Click"/>
+                    <Button x:Name="btn_Cerrar" Content="x" Style="{StaticResource ControlesDeVentana}" Click="btn_Cerrar_Click"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

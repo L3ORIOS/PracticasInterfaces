@@ -1,0 +1,49 @@
+﻿<Window x:Class="Practica5_1._3._5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practica5_1._3._5"
+        mc:Ignorable="d"
+        Title="Práctica 5 - 1.3.5 - Leo Ríos - 2º DAM" Height="600" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <FlowDocumentScrollViewer IsToolBarVisible="True" Zoom="100" >
+            <FlowDocument>
+                <Paragraph>
+                    Tierra llanura sepultura nino tierra los pisan a gustada la con la subía y los deja carcajadas la que por deja tierra consume los que luna tierra huye de criaturas Que que sus mueven de los de árboles con signos pupila deja borrachos huye dolor la los la apariencia paso recodos mi escaleras musgos hombrecillo del es se donde se es deja musgos bajo de tierra a las borrachos la de los por los helechos del sillas sensitivo venas y y se es recodos que es es tránsito quemadas de
+                </Paragraph>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+
+        <FlowDocumentPageViewer Grid.Column="1">
+            <FlowDocument>
+                <Paragraph>Ut facilisis et consectetuer dolore sit sed amet vel duo eos takimata voluptua diam sed iusto option praesent lorem tempor sit ipsum amet blandit duis tempor elitr sanctus augue et assum duo dolor nonumy erat laoreet lorem at sit elitr kasd ipsum accumsan ipsum zzril sit duo ipsum et ea praesent diam duo hendrerit no ea dolore dolor vero clita. Eirmod consequat elitr luptatum iriure praesent sea sanctus diam eirmod dolor aliquyam ut in no gubergren tincidunt ea sadipscing lorem stet dolor aliquyam hendrerit dolore accumsan et diam sadipscing dolor rebum in et tincidunt consequat sanctus eirmod et dolor dolor sea sea et dolor laoreet clita tempor sed et sed</Paragraph>
+                <Paragraph>Elitr labore accusam stet ipsum suscipit augue tempor cum esse nulla sadipscing sit elit diam facer dolor at duo amet justo amet vero dolor justo ea sit dolores aliquyam vel accusam erat labore sanctus sit diam te vero tincidunt elitr esse aliquyam ad nonumy et sea et lorem luptatum diam justo vero et clita elitr dolor gubergren et nulla lorem lobortis amet takimata accusam et sea voluptua amet aliquyam lorem amet magna dolores diam in eirmod amet erat possim ea in magna dolor eros quis et ipsum est rebum molestie sit accusam lorem et dolor no vero facilisi clita et</Paragraph>
+            </FlowDocument>
+        </FlowDocumentPageViewer>
+        <FlowDocumentReader Grid.Row="1" ViewingMode="TwoPage" IsFindEnabled="True" IsPageViewEnabled="False" IsScrollViewEnabled="True" Zoom="80">
+            <FlowDocument>
+                <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce faucibus odio arcu, luctus vestibulum tortor congue in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec lacinia neque. Donec malesuada, ligula non vestibulum cursus, urna purus pellentesque orci, aliquet accumsan dui velit ac justo. Phasellus sagittis ligula in leo dapibus, vel vestibulum felis mattis. Fusce vitae auctor nibh. Ut sit amet fringilla turpis. Aenean tincidunt feugiat sapien, quis scelerisque enim pretium commodo. Mauris fermentum posuere nulla, vitae fermentum quam malesuada in. Cras ultrices bibendum nulla eu mollis. Sed accumsan pretium magna, non sodales velit viverra id. Sed eu elit sit amet sem ullamcorper rhoncus.</Paragraph>
+                <Paragraph>Nulla vitae suscipit tellus. Nunc sit amet tortor fermentum, sollicitudin enim cursus, sagittis lacus. Pellentesque tincidunt massa nisl, nec tempor nulla consequat a. Proin pharetra neque vel dolor congue, at condimentum arcu varius. Sed vel luctus enim. Curabitur eleifend dui et arcu faucibus, sit amet vulputate libero suscipit. Vestibulum ultrices nisi id metus ultrices, eu ultricies ligula rutrum. Phasellus rhoncus aliquam pretium. Quisque in nunc erat. Etiam mollis turpis cursus, sagittis felis vel, dignissim risus. Ut at est nec tellus lobortis venenatis. Fusce elit mi, gravida sed tortor at, faucibus interdum felis. Phasellus porttitor dolor in nunc pellentesque, eu hendrerit nulla porta. Vestibulum cursus placerat elit. Nullam malesuada dictum venenatis. Interdum et malesuada fames ac ante ipsum primis in faucibus.</Paragraph>
+            </FlowDocument>
+        </FlowDocumentReader>
+
+        <FlowDocumentReader Grid.Row="1" Grid.Column="1" ViewingMode="Page" IsFindEnabled="True" IsScrollViewEnabled="False" Zoom="70">
+            <FlowDocument>
+                <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce faucibus odio arcu, luctus vestibulum tortor congue in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec lacinia neque. Donec malesuada, ligula non vestibulum cursus, urna purus pellentesque orci, aliquet accumsan dui velit ac justo. Phasellus sagittis ligula in leo dapibus, vel vestibulum felis mattis. Fusce vitae auctor nibh. Ut sit amet fringilla turpis. Aenean tincidunt feugiat sapien, quis scelerisque enim pretium commodo. Mauris fermentum posuere nulla, vitae fermentum quam malesuada in. Cras ultrices bibendum nulla eu mollis. Sed accumsan pretium magna, non sodales velit viverra id. Sed eu elit sit amet sem ullamcorper rhoncus.</Paragraph>
+                <Paragraph>Nulla vitae suscipit tellus. Nunc sit amet tortor fermentum, sollicitudin enim cursus, sagittis lacus. Pellentesque tincidunt massa nisl, nec tempor nulla consequat a. Proin pharetra neque vel dolor congue, at condimentum arcu varius. Sed vel luctus enim. Curabitur eleifend dui et arcu faucibus, sit amet vulputate libero suscipit. Vestibulum ultrices nisi id metus ultrices, eu ultricies ligula rutrum. Phasellus rhoncus aliquam pretium. Quisque in nunc erat. Etiam mollis turpis cursus, sagittis felis vel, dignissim risus. Ut at est nec tellus lobortis venenatis. Fusce elit mi, gravida sed tortor at, faucibus interdum felis. Phasellus porttitor dolor in nunc pellentesque, eu hendrerit nulla porta. Vestibulum cursus placerat elit. Nullam malesuada dictum venenatis. Interdum et malesuada fames ac ante ipsum primis in faucibus.</Paragraph>
+            </FlowDocument>
+        </FlowDocumentReader>
+        
+    </Grid>
+</Window>

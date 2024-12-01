@@ -1,0 +1,383 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!--Color BackGround-->
+    <Color x:Key="BackgroundRojo">#FF4B3A</Color>
+    <!--Color Letra-->
+    <SolidColorBrush x:Key="Rojo">#FF4B3A</SolidColorBrush>
+
+    <!--Este estilo está destinado a los controles de tipo TextBlock.-->
+    <Style x:Key="TextBlockStyles" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="FontWeight" Value="Medium"/>
+        <Setter Property="Cursor" Value="Arrow"/>
+    </Style>
+
+    <!--Este estilo está destinado a los controles de tipo TextBox.-->
+    <Style x:Key="TextBoxStyles" TargetType="TextBox">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0,0,0,1"/>
+        <Setter Property="BorderBrush" Value="Black"/>
+        <Setter Property="Foreground" Value="White"/>
+    </Style>
+
+    <!--Este estilo está destinado a los controles de tipo PasswordBox.-->
+    <Style x:Key="PasswordBoxStyles" TargetType="PasswordBox">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0,0,0,1"/>
+        <Setter Property="BorderBrush" Value="Black"/>
+        <Setter Property="Foreground" Value="White"/>
+    </Style>
+
+    <!--Este estilo está destinado a los controles de tipo Label.-->
+    <Style x:Key="LabelStyles" TargetType="Label">
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="FontWeight" Value="Medium"/>
+    </Style>
+
+    <!--Este estilo está destinado a los controles de tipo Button. (Ventanas de minimiza y Cerrar)-->
+    <Style x:Key="ControlesDeVentana" TargetType="Button">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontWeight" Value="Medium"/>
+        <Setter Property="Width" Value="20"/>
+        <Setter Property="Height" Value="20"/>
+        <Setter Property="Margin" Value="0,0,20,0"/>
+        <!--Permite personalizar completamente su apariencia y comportamiento, separándolo de los estilos predeterminados.-->
+        <!--Setter: Aplica una configuración específica al botón.-->
+        <!--Property="Template": Indica que este setter redefine la plantilla (template) visual del botón.-->
+        <Setter Property="Template">
+            <!--Setter.Value: Contiene el valor del setter, en este caso, una plantilla personalizada para el botón.-->
+            <Setter.Value>
+                <!--ControlTemplate: Permite definir cómo se renderiza visualmente el botón.-->
+                <!--TargetType="Button": Aplica esta plantilla específicamente a controles de tipo Button.-->
+                <ControlTemplate TargetType="Button">
+                    <!--Contenedor visual del botón. Define:
+                        x:Name="ButtonTriggerTrasparent": Asigna un nombre único para referenciar este borde en los triggers.-->
+                    <Border x:Name="ButtonTriggerTrasparent" BorderBrush="White" BorderThickness="2" CornerRadius="10" >
+                        <!--ContentPresenter: Representa el contenido interno del botón.
+                                ContentSource="Content": Muestra el contenido del botón (por ejemplo, texto o íconos).-->
+                        <ContentPresenter ContentSource="Content" HorizontalAlignment="Center"  />
+                    </Border>
+                    <!--ControlTemplate.Triggers: Define el comportamiento del botón en respuesta a cambios en sus propiedades.-->
+                    <ControlTemplate.Triggers >
+                        <!--Trigger: Cambia propiedades específicas cuando una condición es verdadera.
+                                Property="IsMouseOver": Se activa cuando el mouse está sobre el botón.
+                                Value="True": El estado objetivo es verdadero.-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="ButtonTriggerTrasparent" Property="Background" Value="White"/>
+                            <Setter Property="Foreground" Value="{StaticResource Rojo}"/>
+                            <Setter  Property="Cursor" Value="Hand" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Este estilo está destinado a los controles de tipo TapItem.-->
+    <Style x:Key="StylesTapItems" TargetType="TabItem">
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="FontWeight" Value="Medium"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Template">
+                <Setter.Value>
+                <ControlTemplate TargetType="TabItem">
+                        <Border x:Name="ContenedorTrasparante"  Padding="0,0,0,5" BorderThickness="0,0,0,3" BorderBrush="Transparent">
+                            <!--ContentPresenter ContentSource="Header": El ContentPresenter se usa para mostrar el contenido del TabItem, específicamente el encabezado (Header), que es el contenido que aparece cuando se visualiza el tab.-->
+                            <ContentPresenter ContentSource="Header" />
+                        </Border>
+                        <!-- Cambiar el estilo cuando el TabItem está seleccionado -->
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsSelected" Value="False">
+                                <Setter TargetName="ContenedorTrasparante" Property="Background" Value="Transparent"/>
+                            </Trigger>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter TargetName="ContenedorTrasparante" Property="Background" Value="Transparent"/>
+                                <Setter TargetName="ContenedorTrasparante" Property="BorderBrush" Value="Black"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Cursor" Value="Hand"/>
+                        </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    <!--Este estilo está destinado a los controles de tipo Button. (Botones Generales)-->
+    <Style x:Key="ButtonClik" TargetType="Button">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Foreground" Value="{StaticResource Rojo}"/>
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="FontWeight" Value="Medium"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border x:Name="ButtonOnChange" CornerRadius="40" Height="70" Background="White">
+                        <ContentPresenter ContentSource="Content" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="ButtonOnChange" Property="Background" Value="Transparent" />
+                            <Setter  TargetName="ButtonOnChange"  Property="BorderBrush" Value="White" />
+                            <Setter  TargetName="ButtonOnChange" Property="BorderThickness" Value="2" />
+                            <Setter  Property="Foreground" Value="White" />
+                            <Setter  Property="Cursor" Value="Hand" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+
+    <!--Este estilo está destinado a los controles de tipo TextBlock . (Textos de Error)-->
+    <Style x:Key="ErrorText" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="Red"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="Visibility" Value="Collapsed"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+    </Style>
+
+    <Style x:Key="StyleComboBox" TargetType="ComboBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ComboBox">
+                    <!--El Grid es el contenedor principal que organiza los elementos dentro del ComboBox.-->
+                    <Grid>
+                        <!-- <Border>: El contorno del ComboBox, se le asigna un borde negro en la parte inferior (BorderThickness="0,0,0,1"). -->
+                        <Border x:Name="Border" Background="Transparent" BorderBrush="Black" BorderThickness="0,0,0,1" Padding="1" Margin="0">
+                            <Grid >
+                                <!--Muestra el contenido seleccionado en el ComboBox. Está vinculado a la propiedad SelectionBoxItem que contiene el item seleccionado actualmente.-->
+                                <ContentPresenter HorizontalAlignment="Left" Margin="4"  Content="{TemplateBinding SelectionBoxItem}"/>
+                                <!--ToggleButton: Control que permite abrir y cerrar el desplegable del ComboBox.
+                                    IsChecked="{Binding Path=IsDropDownOpen, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay}": 
+                                        Vincula el estado IsChecked con la propiedad IsDropDownOpen del ComboBox, de modo que cuando se presiona el botón, el desplegable se abre o cierra.
+                                        RelativeSource={RelativeSource TemplatedParent} especifica que la vinculación se realiza con el ComboBox que es el "padre" de este control, es decir, el control que contiene la plantilla de control (en este caso, el ComboBox que tiene el ToggleButton como parte de su plantilla).
+                                        Mode=TwoWay significa que la vinculación es bidireccional. Esto quiere decir que no solo el ToggleButton puede cambiar el valor de IsDropDownOpen cuando se hace clic en él (abrir o cerrar el desplegable), sino que también el valor de IsDropDownOpen puede afectar el valor de IsChecked.
+                                    ClickMode="Press": Establece que el clic activa el cambio de estado.
+                                    <Path>: Un icono de triángulo hacia abajo, representando un indicador para abrir el desplegable.
+                                -->
+                                <ToggleButton x:Name="BtnToggleButton" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Focusable="False"
+                                                Width="20"
+                                              IsChecked="{Binding Path=IsDropDownOpen, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay}"
+                                              ClickMode="Press" 
+                                              HorizontalAlignment="Right">
+                                    <Path Data="M 0 0 L 4 4 L 8 0" Fill="White" Stretch="Uniform" Margin="1"/>
+                                </ToggleButton>
+                            </Grid>
+                        </Border>
+
+                        <!-- Control que muestra el desplegable del ComboBox cuando la propiedad IsDropDownOpen es true. 
+                                Placement="Bottom": El Popup se posiciona debajo del ComboBox.
+                                IsOpen="{TemplateBinding IsDropDownOpen}": Controla la visibilidad del Popup en función de la propiedad IsDropDownOpen.
+                                Focusable="False": No es posible interactuar directamente con el Popup fuera de los elementos del desplegable.
+                        -->
+                        <Popup x:Name="PART_Popup" Placement="Bottom" IsOpen="{TemplateBinding IsDropDownOpen}" AllowsTransparency="True" Focusable="False" >
+                            <Border Background="#FFFF4B3A" BorderBrush="DarkGray" BorderThickness="1,0,1,1" Width="224">
+                                <!--ScrollViewer: Permite que los elementos dentro del Popup sean desplazables.-->
+                                <ScrollViewer Margin="4"  Style="{DynamicResource {x:Static GridView.GridViewScrollViewerStyleKey}}">
+                                    <!--StackPanel: Contenedor para los elementos del ComboBox
+                                            IsItemsHost="True" para ser un contenedor de los elementos del ComboBox.-->
+                                    <StackPanel IsItemsHost="True" />
+                                </ScrollViewer>
+                            </Border>
+                        </Popup>
+                    </Grid>
+
+                    <!-- Triggers para el estado desplegado y no desplegado -->
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsDropDownOpen" Value="True">
+                            <Setter TargetName="Border" Property="Background" Value="Transparent"/>
+                            <Setter TargetName="Border" Property="BorderBrush" Value="DarkGray"/>
+                            
+                        </Trigger>
+                        
+                        <!-- Cambiar el fondo del ToggleButton cuando el ratón está sobre él -->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="BtnToggleButton" Property="Background" Value="Transparent"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <Style TargetType="DatePicker" x:Key="StyleDatePicker">
+        <Setter Property="Template">
+            <Setter.Value>
+                <!--Especifica que la plantilla es para el tipo DatePicker, lo que significa que el DatePicker utilizará esta plantilla para su apariencia visual.-->
+                <ControlTemplate TargetType="DatePicker">
+                    <!--Se utiliza un Grid para contener y organizar los elementos visuales dentro del DatePicker.-->
+                    <Grid>
+                        <!-- <Border> crea un contorno alrededor del control de texto donde se muestra la fecha seleccionada.  -->
+                        <Border Background="Transparent" BorderBrush="Black" BorderThickness="0,0,0,1" >
+                            <!--Se utiliza un Grid para contener y organizar los elementos visuales dentro del DatePicker.-->
+                            <Grid>
+                                <!-- El control DatePickerTextBox es donde se muestra la fecha seleccionada. -->
+                                <DatePickerTextBox x:Name="PART_TextBox"
+                                                   Text=" "
+                                               HorizontalAlignment="Stretch" 
+                                               VerticalAlignment="Stretch" 
+                                               Background="Transparent"
+                                                   BorderBrush="Transparent"
+                                               BorderThickness="2"
+                                               Foreground="White"
+                                               FontWeight="SemiBold"
+                                               Padding="0">
+                                    <!--El DatePickerTextBox tiene su propia plantilla de control interna, que se redefine con un contorno personalizado utilizando un ScrollViewer para contener el contenido (aunque en este caso no parece que haya desplazamiento, ya que no se definieron elementos que lo necesiten).-->
+                                    <DatePickerTextBox.Template>
+                                        <ControlTemplate TargetType="DatePickerTextBox">
+                                            <!--Propiedades "padre"-->
+                                            <Border Background="{TemplateBinding Background}" 
+                                                    BorderBrush="{TemplateBinding BorderBrush}" 
+                                                    BorderThickness="{TemplateBinding BorderThickness}">
+                                                <ScrollViewer x:Name="PART_ContentHost"/>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </DatePickerTextBox.Template>
+                                </DatePickerTextBox>
+                                <!-- Botón para desplegar el calendario -->
+                                <Button x:Name="PART_Button" 
+                                    Width="20" 
+                                    HorizontalAlignment="Right" 
+                                    Background="Transparent" 
+                                    BorderBrush="Transparent" 
+                                    Padding="0" 
+                                    Margin="0" 
+                                    Focusable="False">
+                                    <Path Data="M 0 0 L 4 4 L 8 0" 
+                                      HorizontalAlignment="Center"
+                                      VerticalAlignment="Center"
+                                      Fill="White" 
+                                      Stretch="Uniform" 
+                                      Width="8" Height="8" />
+                                </Button>
+                            </Grid>
+                        </Border>
+
+                        <!-- Popup para el calendario -->
+                        <Popup x:Name="PART_Popup" 
+                            
+                           Placement="Bottom" 
+                           StaysOpen="False" 
+                           AllowsTransparency="True" 
+                           IsOpen="{TemplateBinding IsDropDownOpen}">
+                            <Border Background="Transparent" 
+                                BorderBrush="DarkGray" 
+                                BorderThickness="1" 
+                                CornerRadius="5">
+                                <Calendar x:Name="PART_Calendar" 
+                                      Background="Transparent" 
+                                      BorderThickness="10"
+                                      IsTodayHighlighted="True"/>
+                            </Border>
+                        </Popup>
+                    </Grid>
+
+                    <!-- Triggers -->
+                    <ControlTemplate.Triggers>
+                        <!-- Cambiar el fondo del botón de desplegar al pasar el mouse -->
+                        <Trigger SourceName="PART_Button" Property="IsMouseOver" Value="True">
+                            <Setter TargetName="PART_Button" Property="Background" Value="Transparent"/>
+                            <Setter TargetName="PART_Button" Property="BorderBrush" Value="DarkGray"/>
+                            <Setter TargetName="PART_Button" Property="BorderThickness" Value="0"/>
+                        </Trigger>
+
+                        <!-- Cambiar el borde del campo de texto cuando el DatePicker está abierto -->
+                        <Trigger Property="IsDropDownOpen" Value="True">
+                            <Setter TargetName="PART_TextBox" Property="Background" Value="Transparent"/>
+                            <Setter TargetName="PART_TextBox" Property="BorderBrush" Value="Transparent"/>
+                            <Setter TargetName="PART_TextBox" Property="BorderThickness" Value="0"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="StyleRadioButtons" TargetType="RadioButton">
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="GroupName" Value="sexForm"/>
+        <Setter Property="Margin" Value="20,0"/>
+        
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RadioButton">
+                    <StackPanel Orientation="Horizontal">
+                        <!-- Círculo de selección -->
+                     
+                            <Ellipse x:Name="SelectionCircle" Width="15" Height="15" Fill="White"/>
+                        
+                        <!-- Contenido del RadioButton -->
+                        <ContentPresenter Margin="10,0,0,0"  VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <!-- Triggers para el cambio de estado -->
+                    <ControlTemplate.Triggers>
+                        <!-- Cambia el color del círculo cuando está seleccionado -->
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="SelectionCircle" Property="Fill" Value="Black"/>
+                            <!-- Cambia a cualquier color que prefieras -->
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>        
+    </Style>
+
+    <Style x:Key="CustomCheckBoxStyle" TargetType="CheckBox">
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="CheckBox">
+                    <StackPanel Orientation="Horizontal">
+                        
+
+                        <!-- Recuadro de selección del CheckBox -->
+                        <Border x:Name="CheckBoxBorder" 
+                            Width="12" 
+                            Height="12" 
+                            Background="White" 
+                            BorderBrush="White" 
+                            BorderThickness="1" 
+                            Margin="20,0,-10,0" />
+                        <!-- Ajusta Margin para mover el recuadro -->
+
+                        <!-- Marca del CheckBox -->
+                        <Path x:Name="CheckMark"
+                          Data="M 0 0 L 4 4 L 8 0"
+                          Stroke="Black"
+                          StrokeThickness="2"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Center"
+                          Visibility="Hidden"
+                              Margin="0,0,10,0"/>
+
+                        <!-- Contenido del CheckBox (texto) -->
+                        <ContentPresenter x:Name="ContentPresenter" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                    </StackPanel>
+
+                    <!-- Triggers para el cambio de estado -->
+                    <ControlTemplate.Triggers>
+                        <!-- Cuando el CheckBox está marcado, muestra la marca -->
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="CheckMark" Property="Visibility" Value="Visible"/>
+                            <Setter TargetName="CheckMark" Property="Margin" Value="0,0,10,0"/>
+                        </Trigger>
+
+    
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+</ResourceDictionary>
