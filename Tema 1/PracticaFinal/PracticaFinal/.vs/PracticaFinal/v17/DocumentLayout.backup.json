@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\srleo\\Documents\\GitHub\\PracticasInterfaces\\Tema 1\\PracticaFinal\\PracticaFinal\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3CB6DBA3-0AC4-4F7A-88D8-32C580A1749E}|PracticaFinal\\PracticaFinal.csproj|c:\\users\\srleo\\documents\\github\\practicasinterfaces\\tema 1\\practicafinal\\practicafinal\\practicafinal\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CB6DBA3-0AC4-4F7A-88D8-32C580A1749E}|PracticaFinal\\PracticaFinal.csproj|solutionrelative:practicafinal\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CB6DBA3-0AC4-4F7A-88D8-32C580A1749E}|PracticaFinal\\PracticaFinal.csproj|c:\\users\\srleo\\documents\\github\\practicasinterfaces\\tema 1\\practicafinal\\practicafinal\\practicafinal\\dictionaryofstyles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3CB6DBA3-0AC4-4F7A-88D8-32C580A1749E}|PracticaFinal\\PracticaFinal.csproj|solutionrelative:practicafinal\\dictionaryofstyles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\srleo\\Documents\\GitHub\\PracticasInterfaces\\Tema 1\\PracticaFinal\\PracticaFinal\\PracticaFinal\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "PracticaFinal\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\srleo\\Documents\\GitHub\\PracticasInterfaces\\Tema 1\\PracticaFinal\\PracticaFinal\\PracticaFinal\\MainWindow.xaml.cs",
+              "RelativeToolTip": "PracticaFinal\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAKQAAAAAAAAAAAAxwLgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T10:49:05.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DictionaryOfStyles.xaml",
+              "DocumentMoniker": "C:\\Users\\srleo\\Documents\\GitHub\\PracticasInterfaces\\Tema 1\\PracticaFinal\\PracticaFinal\\PracticaFinal\\DictionaryOfStyles.xaml",
+              "RelativeDocumentMoniker": "PracticaFinal\\DictionaryOfStyles.xaml",
+              "ToolTip": "C:\\Users\\srleo\\Documents\\GitHub\\PracticasInterfaces\\Tema 1\\PracticaFinal\\PracticaFinal\\PracticaFinal\\DictionaryOfStyles.xaml",
+              "RelativeToolTip": "PracticaFinal\\DictionaryOfStyles.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-02T10:48:43.062Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

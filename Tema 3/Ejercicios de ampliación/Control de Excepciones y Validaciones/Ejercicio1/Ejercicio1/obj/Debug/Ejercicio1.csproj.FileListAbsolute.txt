@@ -1,0 +1,7 @@
+C:\Users\srleo\Documents\GitHub\PracticasInterfaces\Tema 3\Ejercicios de ampliación\Control de Excepciones y Validaciones\Ejercicio1\Ejercicio1\bin\Debug\Ejercicio1.exe.config
+C:\Users\srleo\Documents\GitHub\PracticasInterfaces\Tema 3\Ejercicios de ampliación\Control de Excepciones y Validaciones\Ejercicio1\Ejercicio1\bin\Debug\Ejercicio1.exe
+C:\Users\srleo\Documents\GitHub\PracticasInterfaces\Tema 3\Ejercicios de ampliación\Control de Excepciones y Validaciones\Ejercicio1\Ejercicio1\bin\Debug\Ejercicio1.pdb
+C:\Users\srleo\Documents\GitHub\PracticasInterfaces\Tema 3\Ejercicios de ampliación\Control de Excepciones y Validaciones\Ejercicio1\Ejercicio1\obj\Debug\Ejercicio1.csproj.AssemblyReference.cache
+C:\Users\srleo\Documents\GitHub\PracticasInterfaces\Tema 3\Ejercicios de ampliación\Control de Excepciones y Validaciones\Ejercicio1\Ejercicio1\obj\Debug\Ejercicio1.csproj.CoreCompileInputs.cache
+C:\Users\srleo\Documents\GitHub\PracticasInterfaces\Tema 3\Ejercicios de ampliación\Control de Excepciones y Validaciones\Ejercicio1\Ejercicio1\obj\Debug\Ejercicio1.exe
+C:\Users\srleo\Documents\GitHub\PracticasInterfaces\Tema 3\Ejercicios de ampliación\Control de Excepciones y Validaciones\Ejercicio1\Ejercicio1\obj\Debug\Ejercicio1.pdb

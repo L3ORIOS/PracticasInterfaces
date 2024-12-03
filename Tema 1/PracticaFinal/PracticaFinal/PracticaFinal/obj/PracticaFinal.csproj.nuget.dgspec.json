@@ -1,28 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Danie\\Documents\\GitHub\\DAM-2024-2025\\PracticasInterfaces\\Tema 1\\PracticaFinal\\PracticaFinal\\PracticaFinal\\PracticaFinal.csproj": {}
+    "C:\\Users\\srleo\\Documents\\GitHub\\PracticasInterfaces\\Tema 1\\PracticaFinal\\PracticaFinal\\PracticaFinal\\PracticaFinal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Danie\\Documents\\GitHub\\DAM-2024-2025\\PracticasInterfaces\\Tema 1\\PracticaFinal\\PracticaFinal\\PracticaFinal\\PracticaFinal.csproj": {
+    "C:\\Users\\srleo\\Documents\\GitHub\\PracticasInterfaces\\Tema 1\\PracticaFinal\\PracticaFinal\\PracticaFinal\\PracticaFinal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Danie\\Documents\\GitHub\\DAM-2024-2025\\PracticasInterfaces\\Tema 1\\PracticaFinal\\PracticaFinal\\PracticaFinal\\PracticaFinal.csproj",
+        "projectUniqueName": "C:\\Users\\srleo\\Documents\\GitHub\\PracticasInterfaces\\Tema 1\\PracticaFinal\\PracticaFinal\\PracticaFinal\\PracticaFinal.csproj",
         "projectName": "PracticaFinal",
-        "projectPath": "C:\\Users\\Danie\\Documents\\GitHub\\DAM-2024-2025\\PracticasInterfaces\\Tema 1\\PracticaFinal\\PracticaFinal\\PracticaFinal\\PracticaFinal.csproj",
-        "packagesPath": "C:\\Users\\Danie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Danie\\Documents\\GitHub\\DAM-2024-2025\\PracticasInterfaces\\Tema 1\\PracticaFinal\\PracticaFinal\\PracticaFinal\\obj\\",
+        "projectPath": "C:\\Users\\srleo\\Documents\\GitHub\\PracticasInterfaces\\Tema 1\\PracticaFinal\\PracticaFinal\\PracticaFinal\\PracticaFinal.csproj",
+        "packagesPath": "C:\\Users\\srleo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\srleo\\Documents\\GitHub\\PracticasInterfaces\\Tema 1\\PracticaFinal\\PracticaFinal\\PracticaFinal\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\srleo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows7.0"
+          "net6.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -38,7 +38,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net6.0-windows7.0": {
@@ -49,7 +55,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -61,7 +68,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
